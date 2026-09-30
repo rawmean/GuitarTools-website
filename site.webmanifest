@@ -1,7 +1,7 @@
 {
   "name": "GuitarTools",
   "short_name": "GuitarTools",
-  "description": "Your complete guitar toolkit: chromatic tuner, metronome, acoustic string health, and AI technique coach.",
+  "description": "Your complete guitar toolkit: chromatic tuner, metronome, acoustic string health, sheet music, and AI technique coach.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1b1c1e",

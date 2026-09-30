@@ -1,6 +1,6 @@
 # GuitarTools — Website
 
-Marketing website for **GuitarTools** — the complete guitar toolkit for iPhone and Apple Watch (chromatic tuner with reference tones, precision metronome, acoustic string-health diagnostics, and AI technique coach).
+Marketing website for **GuitarTools** — the complete guitar toolkit for iPhone and Apple Watch (chromatic tuner with reference tones, precision metronome, acoustic string-health diagnostics, sheet-music library, and AI technique coach).
 
 ## Structure
 

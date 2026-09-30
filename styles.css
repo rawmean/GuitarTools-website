@@ -300,6 +300,22 @@ section { padding: 88px 0; }
 }
 .tag.hot { color: var(--mango-deep); background: var(--mango-soft); border-color: transparent; }
 
+.feature-card.wide {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: 26px;
+  padding: 34px 32px;
+  background: linear-gradient(135deg, var(--card) 0%, #fff7ec 100%);
+}
+.feature-card.wide .feature-icon { flex: none; }
+.feature-card.wide h3 { font-size: 1.3rem; }
+.feature-card.wide p { flex: 1; max-width: 640px; font-size: 0.98rem; }
+@media (max-width: 1020px) {
+  .feature-card.wide { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .feature-card.wide p { max-width: none; }
+}
+
 @media (max-width: 1020px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .features-grid { grid-template-columns: 1fr; } }
 
@@ -345,6 +361,40 @@ section { padding: 88px 0; }
 
 @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .gallery-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; } }
+
+/* ---------- Sheet Music ---------- */
+
+.sheet-section {
+  background:
+    radial-gradient(900px 480px at 88% 0%, rgba(251, 149, 43, 0.16), transparent 60%),
+    var(--ink);
+  color: #fff;
+}
+.sheet-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+.sheet-art { display: flex; justify-content: center; }
+.sheet-art .phone {
+  max-width: 330px;
+  background: #2a2c30;
+  box-shadow: var(--shadow-lg), 0 0 110px rgba(251, 149, 43, 0.22);
+}
+.sheet-copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.sheet-copy p { color: rgba(255, 255, 255, 0.75); margin-bottom: 26px; max-width: 480px; }
+@media (max-width: 860px) {
+  .sheet-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .sheet-copy p { margin-left: auto; margin-right: auto; }
+  .sheet-art .phone { max-width: 300px; }
+}
 
 /* ---------- Watch ---------- */
 
